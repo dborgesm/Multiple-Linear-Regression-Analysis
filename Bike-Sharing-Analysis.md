@@ -1,26 +1,5 @@
 Bike Sharing Analysis
 ================
-Daniela Borges
-31/12/2019
-
-## Introduction
-
-Bike-sharing systems transform the traditional bike rental process where
-obtaining membership, rental and bike returned have been automated via a
-network of bike stations. These systems allowed the riders to take the
-bike at any bike station and returned it to the closest one to their
-destination. Today, there exists plenty of interest in these systems
-because most cities are highly populated, and the implementation of
-these benefits the traffic, environmental, and health issues.
-
-The objective of the project was to perform a multiple linear regression
-analysis to predict the number of registered members that used this
-bike-sharing system, and identify behaviors depending on the
-environmental and seasonal settings. For instance, weather conditions,
-precipitation, and other factors could affect rental behavior.
-Performing this analysis would help to understand better the trends
-depending on the season and the relationship between the total number of
-registered users and the variables of interests.
 
 ## Data Description and Exploratory Analysis
 
