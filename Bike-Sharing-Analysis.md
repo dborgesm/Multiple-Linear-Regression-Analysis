@@ -103,18 +103,18 @@ Relevant outcomes from the correlation matrix were as follows:
     number of users registered behavior can change depending on the
     month and the temperature
 
-![](Bike-Sharing-Analysis_files/figure-gfm/setup%20q1.3-1.png)<!-- -->
+![](index_files/figure-html/setup%20q1.3-1.png)<!-- -->
 
 Now, the relationship between the registered users and the feels like
 temperature during each season (Figure 2) shows that users’ registration
 tends to peak during the summer and decreases during the winter.
 
-<img src="Bike-Sharing-Analysis_files/figure-gfm/setup q1.4-1.png" style="display: block; margin: auto;" />
+<img src="index_files/figure-html/setup%20q1.4-1.png" width="500" height="300" align="middle" style="display: block; margin: auto;" />
 
 Additionally, Figure 3 shows that people register more when the weather
 conditions are better which also reafirms that during the winter season
 this number tends to decrease.
-<img src="Bike-Sharing-Analysis_files/figure-gfm/setup q1.5-1.png" style="display: block; margin: auto;" />
+<img src="index_files/figure-html/setup%20q1.5-1.png" width="500" height="300" style="display: block; margin: auto;" />
 
 The variables that were removed before modelling were “temperature”,
 “month” and “weekday”, they could lead to multicollinearity and
@@ -152,7 +152,7 @@ than zero). Furthermore, the results indicated that penalizing the model
 increased the mean squared error (Figure 4). Hence, the first-order
 model with no penalization was preferable.
 
-<img src="Bike-Sharing-Analysis_files/figure-gfm/set up q1.7-1.png" style="display: block; margin: auto;" />
+<img src="index_files/figure-html/set up q1.7-1.png" width="400" height="300" style="display: block; margin: auto;" />
 
 After performing lasso, it was decided to explore three models besides
 the original one, these three included interactions because one of the
@@ -178,7 +178,6 @@ had the smaller MSE.
 | :-------------: | :---------------------: | :---------------: | :--------: |
 |     601299      |         700864          |      3424131      |   377431   |
 
-MSE
 
 The results of the previous analysis showed that the simple linear
 regression model had the best performance overall. Because of this, it
@@ -201,8 +200,8 @@ or strong wind speed) or holidays, because of the negative coefficients.
 These means that each unit change in these variables would decrease the
 number of registrations.
 
-|                 | Estimate | Std. Error | t value | Pr(\>|t|) |
-| :-------------: | :------: | :--------: | :-----: | :-------: |
+|                 | Estimate | Std. Error | t value | P-value  |
+|-----------------|----------|------------|---------|-----------|
 | **(Intercept)** |  629.5   |   196.9    |  3.197  | 0.001479  |
 |   **season2**   |   861    |   100.1    |  8.605  | 1.056e-16 |
 |   **season3**   |  859.3   |   130.1    |  6.602  | 1.058e-10 |
@@ -216,11 +215,11 @@ number of registrations.
 |     **hum**     | \-689.9  |   262.2    | \-2.631 | 0.008781  |
 |  **windspeed**  |  \-1572  |   372.9    | \-4.215 | 2.976e-05 |
 
+
 | Observations | Residual Std. Error | \(R^2\) | Adjusted \(R^2\) |
-| :----------: | :-----------------: | :-----: | :--------------: |
+| ------------ | ------------------- | ------- | ---------------- |
 |     500      |        599.5        | 0.8546  |      0.8513      |
 
-Full Model
 
 ### Collinearity
 
@@ -243,13 +242,12 @@ level, which confirmed the violation of the EV. On the other side, the
 linearity assumptions was met, the residual plot did not show a pattern
 different than linear.
 
-<img src="Bike-Sharing-Analysis_files/figure-gfm/set up q1. 12-1.png" style="display: block; margin: auto;" />
+<img src="index_files/figure-html/set%20up%20q1.%2012-1.png" width="400" height="300" style="display: block; margin: auto;" />
 
 | Test          | P-value         |
 | ------------- | --------------- |
 | Breusch-Pagan | 4.86569910^{-6} |
 
-Equal Variance Test
 
 #### Normality
 
@@ -258,13 +256,11 @@ Wilk test. The Q-Q plot revealed that the distribution had a heavy left
 tail, and the p-value of the test was lower than the significance level.
 Both of these confirmed the violation of the normality assumption.
 
-<img src="Bike-Sharing-Analysis_files/figure-gfm/set up q1. 13-1.png" style="display: block; margin: auto;" />
+<img src="index_files/figure-html/set%20up%20q1.%2013-1.png" width="400" height="300" style="display: block; margin: auto;" />
 
 | Test         | P-value          |
 | ------------ | ---------------- |
 | Shapiro-Wilk | 5.578863910^{-9} |
-
-Normality Test
 
 #### Stabilizing the Model Assumptions
 
@@ -284,7 +280,7 @@ analyzing the data, there was no reason for them to be removed, and they
 did not look severe to change the model significantly, hence they were
 kept.
 
-![](Bike-Sharing-Analysis_files/figure-gfm/set%20up%20q1.%2017-1.png)<!-- -->
+![](index_files/figure-html/set%20up%20q2.%2017-1.png)<!-- -->
 
 ## Results
 
@@ -308,7 +304,7 @@ wind speed. Looking at the coefficient path the most important
 predictors of this model were season, year, working day and weather sit
 because they did not converge to zero as fast as the others.
 
-![](Bike-Sharing-Analysis_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](index_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
 
 ## Conclusions
 
