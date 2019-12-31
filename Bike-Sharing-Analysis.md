@@ -296,7 +296,6 @@ close to the actual values.
 | -------------- | ------- | ---------------- |
 | 5.47195610^{5} | 522.379 | 3549.502         |
 
-Performance Metrics
 
 The coefficients included in the final model were year, the feels like
 temperature, working day, season, holiday, weather sit, humidity and
