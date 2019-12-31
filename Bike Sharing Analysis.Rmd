@@ -83,7 +83,7 @@ Registered | registered | [20, ..., 246] | int
 After performing a descriptive analysis of the data, it was decided that the instant and date were not necessary as predictors.The reason for this was due to that instant was just a record and other variables could represent the date. Futhermore, the continuous  variables were already normalized so there was no need to do it to perform the modelling. 
 
 ```{r setup q1.2, include=FALSE}
-bike = read.csv("/Users/ddbor/Documents/MDA/STATS 9159A (Statistic Modelling I)/Assigments/Project/day.csv")
+bike = read.csv("/Users/ddbor/Documents/Multiple-Linear-Regression-Analysis/day.csv")
 
 # The features instant, dteday, casual and cnt will be removed from the model 
 bike = select (bike,-c(instant,dteday,casual,cnt))
@@ -514,7 +514,7 @@ The coefficients included in the final model were year, the feels like temperatu
 ```{r fig.width=5, fig.height=5,echo=FALSE}
 library(png)
 
-img <- readPNG("/Users/ddbor/Documents/MDA/STATS 9159A (Statistic Modelling I)/Assigments/Project/lambda_path.png")
+img <- readPNG("/Users/ddbor/Documents/Multiple-Linear-Regression-Analysis/lambda_path.png")
 grid.raster(img)
 ```
 \newpage
